@@ -1,5 +1,6 @@
 package com.centennial.jovichenmcintyre_mapd711_task1.models
 
+import android.content.Context
 import android.content.res.Resources
 import com.centennial.jovichenmcintyre_mapd711_task1.R
 
@@ -16,14 +17,14 @@ class Student(
     var dreamJob: String = dreamJob
     var favouriteFood: String = favouriteFood
 
-    override fun toString(): String {
+    fun displayInfo(context: Context): String {
 
         var str = ""
-        str+=Resources.getSystem().getString(R.string.app_name)+": $name\n"
-        str+=Resources.getSystem().getString(R.string.address)+": $address\n"
-        str+=Resources.getSystem().getString(R.string.profession)+": $profession\n"
-        str+=Resources.getSystem().getString(R.string.dream_job)+": $dreamJob\n"
-        str+=Resources.getSystem().getString(R.string.favourite_food)+": $favouriteFood\n"
+        str+=context.getString(R.string.name)+": $name\n"
+        str+=context.getString(R.string.address)+": $address\n"
+        str+=context.getString(R.string.profession)+": $profession\n"
+        str+=context.getString(R.string.dream_job)+": $dreamJob\n"
+        str+=context.getString(R.string.favourite_food)+": $favouriteFood\n"
         return str
     }
 

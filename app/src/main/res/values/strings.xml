@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">JoviChenMcintyre_MAPD711_Task1</string>
+    <string name="app_name">MAPD711_Task1</string>
     <string name="name">Name</string>
     <string name="address">Address</string>
     <string name="profession">Profession</string>
@@ -11,4 +11,5 @@
     <string name="enter_your_occupation">What is your current occupation?</string>
     <string name="enter_your_dream_job">What has always been your dream job?</string>
     <string name="what_is_your_favourite_food">What is your favourite food?</string>
+    <string name="student_information">Student Information</string>
 </resources>
