@@ -23,6 +23,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
@@ -39,6 +40,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -55,6 +57,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/occupation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -72,6 +75,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/dream_job"
             android:autofillHints=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,6 +93,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/favourite"
             android:autofillHints=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,6 +105,7 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onSubmit"
             android:layout_marginTop="20dp"
             android:text="@string/submit" />
 
