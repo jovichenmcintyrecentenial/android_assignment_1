@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/name"
-            android:textColor="@color/black"
+            android:textColor="@color/main_text_color"
             android:textSize="@dimen/labelTextSize"
             android:textStyle="bold" />
 
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/address"
-            android:textColor="@color/black"
+            android:textColor="@color/main_text_color"
             android:textSize="@dimen/labelTextSize"
             android:textStyle="bold" />
 
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/profession"
-            android:textColor="@color/black"
+            android:textColor="@color/main_text_color"
             android:textSize="@dimen/labelTextSize"
             android:textStyle="bold" />
 
@@ -70,7 +70,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:text="@string/dream_job"
-            android:textColor="@color/black"
+            android:textColor="@color/main_text_color"
             android:textSize="@dimen/labelTextSize"
             android:textStyle="bold" />
 
@@ -88,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/favourite_food"
-            android:textColor="@color/black"
+            android:textColor="@color/main_text_color"
             android:textSize="@dimen/labelTextSize"
             android:textStyle="bold" />
 
