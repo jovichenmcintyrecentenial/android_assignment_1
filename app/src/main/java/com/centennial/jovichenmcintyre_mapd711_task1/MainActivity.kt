@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import com.centennial.jovichenmcintyre_mapd711_task1.exception.UserInputException
-import com.centennial.jovichenmcintyre_mapd711_task1.models.Person
+import com.centennial.jovichenmcintyre_mapd711_task1.models.Student
 import com.google.gson.Gson
 
 class MainActivity : AppCompatActivity() {
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
 
                 //create person object using data from text field
-                var person = Person(
+                var student = Student(
                     nameEditText.text.toString(),
                     addressEditText.text.toString(),
                     occupationEditText.text.toString(),
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
                 )
 
                 //serialize person object so it can be passed in intent as a JSON string
-                var serializedData:String = Gson().toJson(person)
+                var serializedData:String = Gson().toJson(student)
 
                 //navigate to other intent with class data
                 var intent = Intent(this,DisplayPersonInformationActivity::class.java)
