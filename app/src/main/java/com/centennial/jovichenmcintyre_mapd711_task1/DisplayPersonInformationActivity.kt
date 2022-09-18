@@ -11,9 +11,15 @@ class DisplayPersonInformationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.display_person_information)
 
+        //get json string from intent
         var serializedObject = intent.getStringExtra("person")
+        //convert json string in to student object
         var student = Gson().fromJson(serializedObject,Student::class.java)
+
+        //get textView View
         var textView = findViewById<TextView>(R.id.textView)
+
+        //display student information
         textView.text = student.displayInfo(this)
     }
 }

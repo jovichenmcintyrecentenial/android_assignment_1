@@ -1,9 +1,9 @@
 package com.centennial.jovichenmcintyre_mapd711_task1.models
 
 import android.content.Context
-import android.content.res.Resources
 import com.centennial.jovichenmcintyre_mapd711_task1.R
 
+//student class holding student information
 class Student(
     name: String,
     address: String,
@@ -11,12 +11,14 @@ class Student(
     dreamJob: String,
     favouriteFood: String
 ) {
+    //declare class varibles
     var name:String = name
     var address: String = address
     var profession: String = profession
     var dreamJob: String = dreamJob
     var favouriteFood: String = favouriteFood
 
+    //custom display function to display student information
     fun displayInfo(context: Context): String {
 
         var str = ""

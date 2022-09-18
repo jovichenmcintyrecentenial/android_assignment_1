@@ -58,6 +58,7 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
+    //trigger when submit button is pressed
     fun onSubmit(view: View) {
         try {
             //validate user input
