@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this,message,Toast.LENGTH_SHORT).show()
     }
 
-    //validate edit text information
+    //validate edit text information if there is an issue throw an exception
     private fun isDataValid(): Boolean {
 
         if(nameEditText.text.trim().isEmpty()){
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             if (isDataValid()) {
 
 
-                //create person object using data from text field
+                //create student object using data from text field
                 var student = Student(
                     nameEditText.text.toString(),
                     addressEditText.text.toString(),
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
 
                 )
 
-                //serialize person object so it can be passed in intent as a JSON string
+                //serialize student object so it can be passed in intent as a JSON string
                 var serializedData:String = Gson().toJson(student)
 
                 //navigate to other intent with class data
