@@ -1,106 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
 
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    android:paddingTop="20dp"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textSize="@dimen/labelTextSize"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/enter_your_full_name"
-        />
+        android:layout_marginLeft="@dimen/page_margin"
+        android:layout_marginRight="@dimen/page_margin"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/page_margin"
+        tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/address"
-        android:textSize="@dimen/labelTextSize"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/profession"
-        android:textSize="@dimen/labelTextSize"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dream_job"
-            android:textSize="@dimen/labelTextSize"
+            android:text="@string/name"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_weight="1"
-            />
+            android:textSize="@dimen/labelTextSize"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/enter_your_full_name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/labelTextSize"
+            android:textStyle="bold" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            />
+            android:autofillHints=""
+            android:hint="@string/enter_home_address"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profession"
+            android:textColor="@color/black"
+            android:textSize="@dimen/labelTextSize"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:autofillHints=""
+            android:hint="@string/enter_your_occupation"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/dream_job"
+            android:textColor="@color/black"
+            android:textSize="@dimen/labelTextSize"
+            android:textStyle="bold" />
+
+        <EditText
+            android:autofillHints=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_your_dream_job"
+            android:inputType="textPersonName" />
 
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/favourite_food"
+            android:textColor="@color/black"
+            android:textSize="@dimen/labelTextSize"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/favourite_food"
-        android:textSize="@dimen/labelTextSize"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        />
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/submit" />
+        <EditText
+            android:autofillHints=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/what_is_your_favourite_food"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/submit" />
 
 
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>

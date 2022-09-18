@@ -6,5 +6,9 @@
     <string name="dream_job">Dream Job</string>
     <string name="favourite_food">Favourite Food</string>
     <string name="submit">Submit</string>
-    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="enter_your_full_name">What is your name?</string>
+    <string name="enter_home_address">Where do you currently live?</string>
+    <string name="enter_your_occupation">What is your current occupation?</string>
+    <string name="enter_your_dream_job">What has always been your dream job?</string>
+    <string name="what_is_your_favourite_food">What is your favourite food?</string>
 </resources>
