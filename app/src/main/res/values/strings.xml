@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JoviChenMcintyre_MAPD711_Task1</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="profession">Profession</string>
+    <string name="dream_job">Dream Job</string>
+    <string name="favourite_food">Favourite Food</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+</resources>
