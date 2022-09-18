@@ -1,11 +1,14 @@
 package com.centennial.jovichenmcintyre_mapd711_task1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import com.centennial.jovichenmcintyre_mapd711_task1.exception.UserInputException
+import com.centennial.jovichenmcintyre_mapd711_task1.models.Person
+import com.google.gson.Gson
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var addressEditText:EditText
     private lateinit var occupationEditText:EditText
     private lateinit var dreamJobEditText:EditText
-    private lateinit var favouriteJobEditText:EditText
+    private lateinit var favouriteFoodEditText:EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         addressEditText= findViewById(R.id.address)
         occupationEditText= findViewById(R.id.occupation)
         dreamJobEditText= findViewById(R.id.dream_job)
-        favouriteJobEditText= findViewById(R.id.favourite)
+        favouriteFoodEditText= findViewById(R.id.favourite)
     }
 
     //use to display toast messages
@@ -48,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         if(dreamJobEditText.text.trim().isEmpty()){
             throw UserInputException("Please enter your dream job")
         }
-        if(favouriteJobEditText.text.trim().isEmpty()){
+        if(favouriteFoodEditText.text.trim().isEmpty()){
             throw UserInputException("Please enter your favourite food")
         }
 
@@ -59,8 +62,25 @@ class MainActivity : AppCompatActivity() {
         try {
             //validate user input
             if (isDataValid()) {
-                //navigate to other intent with class data
 
+
+                //create person object using data from text field
+                var person = Person(
+                    nameEditText.text.toString(),
+                    addressEditText.text.toString(),
+                    occupationEditText.text.toString(),
+                    dreamJobEditText.text.toString(),
+                    favouriteFoodEditText.text.toString(),
+
+                )
+
+                //serialize person object so it can be passed in intent as a JSON string
+                var serializedData:String = Gson().toJson(person)
+
+                //navigate to other intent with class data
+                var intent = Intent(this,DisplayPersonInformationActivity::class.java)
+                intent.putExtra("person",serializedData)
+                startActivity(intent)
             }
         }
         //catch  and display user input exception
